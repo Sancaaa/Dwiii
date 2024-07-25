@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dwi Mepandes</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Dwi.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="title.png" type="image" />
+  </head>
+  <body>
+    <div id="div1" class="container">
+      <img class="potrait" src="Dwi 1.jpg" />
+      <p>Sira niki? Dwi?</p>
+      <div class="buttoncon">
+        <button id="buttonyes" onclick="handleButtonClick('yes')">Nggih</button>
+        <button id="buttonno" onclick="handleButtonClick('no'); playAudio2(1)">
+          Ten
+        </button>
+      </div>
+    </div>
+
+    <div id="div2" class="hidden">
+      <img class="potrait" src="Dwi 2.jpg" />
+      <p>Ipun seken?</p>
+      <div class="buttoncon">
+        <button id="buttonyes" onclick="handleButtonClick('yes')">Nggih</button>
+        <button id="buttonno" onclick="handleButtonClick('no'); playAudio3(0)">
+          Sing
+        </button>
+      </div>
+    </div>
+
+    <div id="div3" class="hidden">
+      <img class="potrait" src="Dwi 3.jpg" />
+      <p>Sekenan ci?</p>
+      <div class="buttoncon">
+        <button id="buttonyes" onclick="handleButtonClick('yes')">Nggih</button>
+        <button id="buttonno" onclick="handleButtonClick('no'); playAudio4(0)">
+          SING
+        </button>
+      </div>
+    </div>
+
+    <div id="div4" class="hidden">
+      <img class="potrait" src="Dwi 4.jpg" />
+      <p>Nah nah.</p>
+      <div class="buttoncon">
+        <button
+          id="buttonrestart"
+          onclick="handleButtonClick('restart'); playAudio1(0)"
+        >
+          Nah balek be
+        </button>
+      </div>
+    </div>
+
+    <div id="div5" class="hidden">
+      <img class="potrait" src="Dwi 5.jpg" />
+      <p>BEEIHHHH</p>
+      <div class="buttoncon">
+        <button id="buttoncelebrate" onclick="playAudioAndAnimate()">
+          Rahajeng untu anyar, DWi!
+        </button>
+        <button id="acikiwir" onclick="playAudioAndAnimate()">
+          Rahajeng untu anyar, DWi!
+        </button>
+      </div>
+      <img id="cat" src="HBD.jpg" />
+      <div class="ballooncon" id="animatedDiv">
+        <img class="baloon" src="Baloon.png" alt="Flying Image" />
+        <img class="baloon" src="Baloon.png" alt="Flying Image" />
+        <img class="baloon" src="Baloon.png" alt="Flying Image" />
+        <img class="baloon" src="Baloon.png" alt="Flying Image" />
+        <img class="baloon" src="Baloon.png" alt="Flying Image" />
+        <img class="baloon" src="Baloon.png" alt="Flying Image" />
+      </div>
+    </div>
+    <audio id="soundload" src="cat1.mp3" preload="auto"></audio>
+    <audio id="sound1" src="cat1.mp3" preload="auto"></audio>
+    <audio id="sound2" src="cat2.mp3" preload="auto"></audio>
+    <audio id="sound3" src="cat3.mp3" preload="auto"></audio>
+    <audio id="sound4" src="cat4.mp3" preload="auto"></audio>
+    <audio id="sound5" src="Yippe.mp3" preload="auto"></audio>
+
+    <script src="Dwi.js"></script>
+  </body>
+</html>

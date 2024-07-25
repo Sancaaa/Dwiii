@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5vh 3vw;
+  padding: 0;
+  background-color: white;
+  font-family: "Montserrat";
+  background-color: rgb(245, 230, 211);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+}
+
+.potrait {
+  border-radius: 30px;
+}
+
+p {
+  font-size: 450%;
+  font-weight: 500;
+  margin: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#div2,
+#div3,
+#div4,
+#div5 {
+  flex-direction: column;
+  padding: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  text-transform: uppercase;
+  appearance: none;
+  font-family: "Montserrat";
+  flex: 1 1 auto;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid white;
+  color: white;
+  font-weight: 700;
+  font-size: 400%;
+}
+
+.buttoncon {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 auto;
+  padding: 20px 5px;
+  gap: 20px;
+}
+
+#buttonyes {
+  background-color: #cdf2ca;
+}
+
+#buttonno {
+  background-color: #ffc898;
+}
+
+#buttoncelebrate {
+  background-color: #ec9dd5;
+}
+
+#buttonrestart {
+  background-color: #bfa4bba7;
+}
+
+#acikiwir {
+  position: absolute;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  width: 100vw;
+}
+
+#cat {
+  transform: rotate(25deg);
+  width: 50%;
+  position: absolute;
+  top: 37vh;
+  right: -3vh;
+}
+
+.ballooncon {
+  position: absolute;
+  bottom: -100%;
+  left: 3%;
+  animation: none;
+  width: 80vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 500px;
+  display: grid;
+}
+
+.fly-animation {
+  animation: fly 5s linear forwards;
+}
+
+.baloon {
+  width: 150%;
+  height: auto;
+}
+
+@keyframes fly {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
