@@ -13,7 +13,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  padding: 35px;
+  padding: 24px;
 }
 
 .potrait {
